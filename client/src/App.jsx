@@ -1,6 +1,6 @@
 import React from 'react'
 import Sidebar from './components/Sidebar'
-import ChatBox from './components/ChatBOx'
+import ChatBox from './components/ChatBox'
 import Credits from './pages/Credits'
 import Community from './pages/Community'
 import Loading from './pages/Loading'
