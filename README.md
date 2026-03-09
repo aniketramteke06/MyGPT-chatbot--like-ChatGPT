@@ -3,7 +3,7 @@
 A full-stack AI chatbot application built with the MERN stack, integrated with OpenAI GPT API.
 
 ## 🚀 Live Demo
-🔧 Currently being updated — check back soon!
+🌐 https://my-gpt-chatbot-like-chat-gpt.vercel.app/
 
 ## ✨ Features
 - AI-powered responses using OpenAI GPT API
