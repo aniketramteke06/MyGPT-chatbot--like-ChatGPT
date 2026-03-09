@@ -3,7 +3,7 @@
 A full-stack AI chatbot application built with the MERN stack, integrated with OpenAI GPT API.
 
 ## 🚀 Live Demo
-Under working (solving some auth and database issues ) 
+🔧 Currently being updated — check back soon!
 
 ## ✨ Features
 - AI-powered responses using OpenAI GPT API
