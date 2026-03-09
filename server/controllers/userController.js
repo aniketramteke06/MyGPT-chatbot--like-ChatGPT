@@ -15,18 +15,19 @@ const generatetoken = (id)=>{
 //API to register user
 export const registerUser = async(req,res)=>{
     const {name, email, password} = req.body;
-
     try {
         const userExists = await User.findOne({email})
-
         if(userExists){
-            return res.json({success:false, message:"user aready exists"})
+            return res.json({success:false, message:"user already exists"})
         }
 
-        const user = await User.create({name,email,password})
+        // ✅ Hash password
+        const salt = await bcrypt.genSalt(10)
+        const hashedPassword = await bcrypt.hash(password, salt)
+        const user = await User.create({name, email, password: hashedPassword})
 
         const token = generatetoken(user._id)
-        res.json({success:true,token})
+        res.json({success:true, token})
     } catch (error) {
         return res.json({success:false, message:error.message})
     }
